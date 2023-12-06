@@ -11,115 +11,230 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body class="font-[Poppins] text-white bg-black">
-    <header class="bg-header-img bg-cover w-full flex flex-col items-center text-center backdrop-brightness-50">
-        <nav class="w-5/6 flex flex-wrap">
-            <img class="w-20 h-7  " src="/Images/Netflix.png" alt="">
-            <div>
-                <select class="w-16 h-8 bg-inherit border-[1px] border-gray-500 rounded-md" name="Languages"
-                    id="Languages">
-                    <option class="" value="English">English</option>
-                    <option value="Hindi">Hindi</option>
-                </select>
-                <button class="w-20 h-8 bg-red-600 rounded-md text-sm font-medium">Sign in</button>
-            </div>
-        </nav>
-        <h1 class="w-5/6 text-3xl font-bold">The biggest Indian hits. The best Indian stories. All streaming here.</h1>
-        <p class="w-5/6 text-lg font-normal">Watch anywhere. Cancel anytime.</p>
-        <h3 class="w-8/12 text-lg font-medium">Ready to watch? Enter your email to create or restart your membership.
-        </h3>
-        <div class="w-4/6">
-            <div
-                class="h-12 w-full flex flex-col items-start text-start justify-center border-[1px] border-green-700 backdrop-opacity-10 backdrop-invert bg-blue-500/30 mx-auto rounded-md">
-                <label class="w-10/12 mx-auto focus-visible:text-xs" for="email">Email Address</label>
-                <input class="hidden" id="email" type="email">
-            </div>
-            <button class="bg-red-600 w-full h-12 rounded-md">Get Started</button>
-        </div>
-    </header>
-    <main>
-        <section class="w-full flex flex-col items-center">
-            <div class="w-4/5 flex flex-col items-center text-center">
-                <h2 class="w-full text-3xl font-bold">Enjoy on your TV</h2>
-                <p class="w-full">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
-                </p>
-            </div>
-            <div class="w-full flex items-center justify-center">
-                <img class="z-20 mx-auto w-4/5"
-                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
-                <video autoplay muted loop class="absolute z-10 w-4/6" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v">Your browser does not support this video.</video>
-            </div>
-        </section>
-        <section class="w-full flex flex-col items-center">
-            <div class="w-4/5 flex flex-col items-center text-center">
-                <h2 class="w-full text-3xl font-bold">Download your shows to watch offline</h2>
-                <p class="w-full">Save your favourites easily and always have something to watch.</p>
-            </div>
-            <div class="w-full flex items-end justify-center">
-                <img class="z-20 mx-auto w-4/5"
-                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
-                    alt="Download option Image">
-                <div class="absolute flex z-30 w-[99%] h-1/5 bg-red-600 border-2 border-gray-600 rounded-lg px-2 py-1">
-                    <img class="h-full w-10"
-                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
-                        alt="Stranger Thing's Image">
-                    <div class="flex flex-col justify-center w-3/6">
-                        <span class="text-sm">Stranger Things</span>
-                        <span class="text-xs text-[#0071EB]">Downloading...</span>
+    <div class="bg-header-img bg-cover w-full">
+        <div class="bg-gradient-to-b from-black/70 to-transparent w-full">
+            <header class=" w-full flex flex-col items-center text-center backdrop-brightness-50 py-10 ">
+                <nav class="w-5/6 flex flex-wrap nav-sec:justify-between">
+                    <img class="w-20 h-7 mobile:h-14 mobile:w-36 " src="/Images/Netflix.png" alt="">
+                    <div class="flex ">
+                        <button class=" mx-1 h-8 w-16 border-[1px] border-gray-500 rounded-md flex items-center justify-evenly nav-brk:w-32">
+                            <label htmlFor="Language" className=' h-4 w-4'><img src="/Images/lang-logo.svg" alt="Language logo" className=' h-full w-full' /></label>
+                            
+                            <select class="hidden bg-inherit appearance-none nav-brk:block" name="Languages"
+                            id="Languages" >
+                                <option  value="English">English</option>
+                                <option value="Hindi">Hindi</option>
+                            </select>
+                            <label for="Languages" class="h-full flex items-center">
+                                <span class="material-symbols-outlined">
+                                arrow_drop_down
+                                </span>
+                            </label>
+                            
+                        </button>
+                        
+                        <button class="mx-1 w-20 h-8 bg-red-600 rounded-md text-sm font-medium">Sign in</button>
                     </div>
-                    <div></div>
+                </nav>
+                <div class="flex flex-col items-center justify-evenly text-center h-[496px]">
+                    <div class="w-full h-full pt-10 flex flex-col items-center justify-end">
+                        <h1 class="w-5/6 text-3xl font-bold mobile:text-5xl">The biggest Indian hits. The best Indian stories. All streaming here.</h1>
+                        <p class="w-5/6 text-lg font-normal">Watch anywhere. Cancel anytime.</p>
+                    </div>
+                    <div class="w-full h-full pt-5 flex flex-col items-center justify-start">
+                        <h3 class="w-8/12 text-lg font-medium">Ready to watch? Enter your email to create or restart your membership.</h3>
+                        <div class="w-4/6 flex flex-col justify-start mobile:flex-row mobile:justify-center">
+                            <div class="h-12 w-full flex flex-col items-start text-start justify-center border-[1px] border-green-700 backdrop-opacity-10 backdrop-invert bg-blue-500/30  m-2 rounded-md mobile:h-14 mobile:w-[500px]">
+                                <label class="w-10/12 mx-auto focus-visible:text-xs" for="email">Email Address</label>
+                                <input class="hidden" id="email" type="email">
+                            </div>
+                            <button class="bg-red-600 w-40 h-12 rounded-md m-2 mobile:w-44 mobile:h-14 ">Get Started</button>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
-        </section>
-        <section class="w-full flex flex-col items-center">
-            <div class="w-4/5 flex flex-col items-center text-center">
-                <h2 class="w-full text-3xl font-bold">Watch Everywhere</h2>
-                <p class="w-full">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-            </div>
-            <div class="w-full flex justify-center">
-                <img class="z-20 w-4/5"
-                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
-                    alt="Responsive design Image">
-                <video autoplay loop class="absolute py-6 z-10 w-3/6" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v">Your browser does not support this video.</video>
-            </div>
-        </section>
-        <section class="w-full flex flex-col items-center">
-            <div class="w-4/5 flex flex-col items-center text-center">
-                <h2 class="w-full text-3xl font-bold">Create profiles for kids</h2>
-                <p class="w-full">Send children on adventures with their favourite characters in a space made just for
-                    them—free with your membership.</p>
-            </div>
-            <div class="w-full flex items-center justify-center">
-                <img class="z-20 mx-auto w-4/5"
-                    src="https://occ-0-6246-2186.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
-                    alt="Kid's Section Image">
-            </div>
-        </section>
-        <section class="w-full flex flex-col items-center">
-            <h2 class="w-4/5 text-3xl font-bold text-center">Frequently Asked Questions</h2>
-            <div class="w-4/5">
-                <div class="w-full flex flex-col bg-[#2d2d2d]">
-                    <div class="text-lg p-5 flex justify-between" onclick="faq()">
-                        <span>What is Netflix?</span>
-                        <span class="material-symbols-outlined">
-                            add
+                
+            </header>
+        </div>
+    </div>
+    
+    
+    <main>
+        <div class="h-2 bg-[#303030]">
+
+        </div>
+        <div class="py-10 ">
+            <section class="w-full flex flex-col items-center mobile:flex-row">
+        
+                <div class="w-full flex flex-col items-center text-center mobile:w-1/2">
+                    <h2 class="w-4/5 text-3xl font-bold">Enjoy on your TV</h2>
+                    <p class="w-4/5">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                    </p>
+                </div>
+                <div class="w-full flex justify-center mobile:w-1/2">
+                    <img class="z-20 w-4/5"
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+                    <video autoplay muted loop class="absolute z-10 w-4/6 py-10 mobile:w-1/3" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v">Your browser does not support this video.</video>
+                </div>
+            </section>
+        </div>
+        <div class="h-2 bg-[#303030]">
+
+        </div>
+        <div class="py-10">
+            <section class="w-full flex flex-col items-center mobile:flex-row-reverse">
+                <div class="w-full flex flex-col items-center text-center">
+                    <h2 class="w-4/5 text-3xl font-bold">Download your shows to watch offline</h2>
+                    <p class="w-4/5">Save your favourites easily and always have something to watch.</p>
+                </div>
+                <div class="w-full flex items-end justify-center">
+                    <img class="z-20 mx-auto w-4/5"
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                        alt="Download option Image">
+                    <div class="absolute flex items-center justify-between z-30 w-7/12 h-1/6 bg-black border-2 border-gray-600 rounded-lg px-2 py-1 mobile:w-1/3">
+                        <img class="h-full w-10"
+                            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+                            alt="Stranger Thing's Image">
+                        <div class="flex flex-col justify-center w-3/6">
+                            <span class="text-sm">Stranger Things</span>
+                            <span class="text-xs text-[#0071EB]">Downloading...</span>
+                        </div>
+                        <div class="h-full">
+                            <img class="h-full" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" alt="Download animation">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="h-2 bg-[#303030]">
+
+        </div>
+        <div class="py-10">
+            <section class="w-full flex flex-col items-center mobile:flex-row">
+                <div class="w-full flex flex-col items-center text-center mobile:w-1/2">
+                    <h2 class="w-4/5 text-3xl font-bold">Watch Everywhere</h2>
+                    <p class="w-4/5">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                </div>
+                <div class="w-full flex justify-center mobile:w-1/2">
+                    <img class="z-20 w-4/5"
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+                        alt="Responsive design Image">
+                    <video autoplay loop class="absolute py-6 z-10 w-3/6 mobile:w-1/4" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v">Your browser does not support this video.</video>
+                </div>
+            </section>
+        </div>
+        <div class="h-2 bg-[#303030]">
+
+        </div>
+        <div class="py-10">
+            <section class="w-full flex flex-col items-center mobile:flex-row-reverse">
+        
+                <div class="w-full flex flex-col items-center text-center mobile:w-1/2">
+                    <h2 class="w-4/5 text-3xl font-bold">Create profiles for kids</h2>
+                    <p class="w-4/5">Send children on adventures with their favourite characters in a space made just for
+                        them—free with your membership.</p>
+                </div>
+                <div class="w-full flex items-center justify-center mobile:w-1/2">
+                    <img class="z-20 mx-auto w-4/5"
+                        src="https://occ-0-6246-2186.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+                        alt="Kid's Section Image">
+                </div>
+            </section>
+        </div>
+        <div class="h-2 bg-[#303030]">
+
+        </div>
+        <div class="py-10">
+            <section class="w-full flex flex-col items-center ">
+                <h2 class="w-4/5 text-3xl font-bold text-center mb-5">Frequently Asked Questions</h2>
+                <div class="w-4/5">
+                    <div class="faqs w-full flex flex-col bg-[#2d2d2d]">
+                        <div class="text-lg p-5 flex justify-between">
+                            <span>What is Netflix?</span>
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </div>
+                        <hr>
+                        <span class="answer hidden text-lg p-5">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                            <br>
+                            <br>
+                            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
                         </span>
                     </div>
-                    <hr>
-                    <span class="text-lg p-5">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
-                        <br>
-                        <br>
-                        You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
-                    </span>
+                    <div class="faqs w-full flex flex-col bg-[#2d2d2d] ">
+                        <div class="text-lg p-5 flex justify-between">
+                            <span>How much does Netflix cost?</span>
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </div>
+                        <hr>
+                        <span class="answer hidden text-lg p-5">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
+                        </span>
+                    </div>
+                    <div class="faqs w-full flex flex-col bg-[#2d2d2d] ">
+                        <div class="text-lg p-5 flex justify-between">
+                            <span>Where can I watch?</span>
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </div>
+                        <hr>
+                        <span class="answer hidden text-lg p-5">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                            <br>
+                            <br>
+                            You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                        </span>
+                    </div>
+                    <div class="faqs w-full flex flex-col bg-[#2d2d2d] ">
+                        <div class="text-lg p-5 flex justify-between">
+                            <span>How do I cancel?</span>
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </div>
+                        <hr>
+                        <span class="answer hidden text-lg p-5">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                        </span>
+                    </div>
+                    <div class="faqs w-full flex flex-col bg-[#2d2d2d] ">
+                        <div class="text-lg p-5 flex justify-between">
+                            <span>What can I watch on Netflix?</span>
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </div>
+                        <hr>
+                        <span class="answer hidden text-lg p-5">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                        </span>
+                        
+                    </div>
+                    
+                    <div class="faqs w-full flex flex-col bg-[#2d2d2d] ">
+                        <div class="text-lg p-5 flex justify-between">
+                            <span>Is Netflix good for kids?</span>
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </div>
+                        <hr>
+                        <span class="answer hidden text-lg p-5">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+                            <br><br>
+                            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                        </span>
+                        
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+        
     </main>
-    <script>
-
-    </script>
+    
 </body>
 
 </html>
